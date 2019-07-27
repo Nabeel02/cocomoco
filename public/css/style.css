@@ -1,0 +1,208 @@
+#header-back{
+    background-image: url('../assets/Banner.png');
+    height: 66.7em;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 6%;
+    background-color: #e2cdb6;
+}
+.navbar-brand-custom{
+    background-color: #320B0B;
+    padding: 10px;
+    opacity: .5;
+}
+.text-brown{
+    color: #E2A946 !important;
+}
+.back-color{
+    background-color: #E2A946 !important;
+}
+.search{
+    opacity: .8;
+}
+#header-back ul{
+    font-size: 1.3rem;
+}
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+/*recently-added*/
+#recently-added{
+    background-color: #e2cdb6;
+    max-width: 100%;
+    background-position: 50% 50%;
+}
+.custom-recent{
+    padding-left: 5%;
+}
+#recently-added .card, #category .card{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+}
+/*category*/
+#category{
+    background-color: #FFFFFD;
+}
+.custom-category{
+    padding-left:3%;
+}
+/* .card-category{
+    margin-right: 27px !important;
+} */
+/*mostFamous*/
+#mostFamous{
+    background-color: #FFFFFD;
+}
+.famous-box{
+    height:250px;
+    /* width:300px; */
+    overflow:hidden;
+}
+@media only screen and (max-width: 600px) {
+
+    #mostFamous h3{
+        font-size: 2.75rem;
+    }
+
+}
+/*MostSeller*/
+#mostSeller{
+    background-color: #2b140a;
+    height: 28em;
+}
+.mstsler-img{
+    border: 1px solid #2b140a;
+    border-top-right-radius: 154px;
+    border-bottom-right-radius: 164px;
+    height: 28em;
+}
+/*custom famous*/
+.custom-famous-img{
+    border-radius: 55%;
+    box-shadow: 3px 8px 17px #000000;
+}
+@media only screen and (max-width: 600px) {
+
+    #mostSeller h3{
+        font-size: 2.75rem;
+    }
+    #mostSeller .card-body{
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-right:0px;
+        padding-left: 0px;
+    }
+}
+#mostSeller .card{
+    background-color: transparent;
+}
+/*footer*/
+#footer{
+    background-color: #110A06;
+}
+/*signup*/
+.sign-up-inpt{
+    background-color: #e2cdb6 !important;
+    border-color: #320B0B;
+}
+
+.sign-up-inpt:focus{
+    box-shadow: 5px 7px 20px  #320B0B !important;
+}
+/*product-page*/
+.product-focus{
+    border: 3px solid #320B0B;
+}
+.product-focus:focus{
+    box-shadow:7px 7px 7px #320B0B
+}
+/* The whole code is for signin */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+}
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+    font-size: 3.5rem;
+}
+}
+/* The whole code is for signin */
+
+/* Laravel default navigation */
+
+#laravelDefault {
+    background-color:#E2A946 !important ;
+    padding: 0% !important;
+    color: #FFFFFD !important;
+}
+
+/* Laravel default navigation */
+
+/* The whole is for category page  */
+
+.album .card {
+    background-color: transparent;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(226, 169, 70,0.5);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.card:hover .overlay {
+    bottom: 49%;
+    height: 51%;
+    color: white;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* This is end of category page */
+
+
+/* This is the starting of single product css */
+
+#image-section .container .row .col-md-6 .d-flex .p-2{
+    font-size: 0.2rem;
+}
+.tab-content .card{
+    background: transparent;
+    border:none;
+}
+.tab-content .card .card-img-top{
+    /* width: 30%; */
+    border-radius: 50%;
+}
+
+/*  This is the end of single product csss */
+
+/* This is the starting of product form */
+
+.custom-container{
+    width: 80%;
+}
+.suggested-product{
+    max-height: 80px;
+}
+
+/* This is the starting of product form */
