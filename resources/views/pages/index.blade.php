@@ -97,7 +97,7 @@
                             @foreach ($recentCategory as $category )
                                 <div class="col-md-3">
                                     <div class="card card-category">
-                                        <img class="card-img-top" src="{{ asset($category->category_image) }} " alt="Card image cap">
+                                        <img class="card-img-top" src="{{ asset('images/category/'.$category->category_image) }} " alt="Card image cap">
                                         <div class="card-body px-0">
                                             <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
                                             <a href="#" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
@@ -105,145 +105,10 @@
                                     </div>
                                 </div>
                             @endforeach
-                            {{-- <div class="col-md-3">
-                                <div class="card card-category">
-                                    <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                                    <div class="card-body px-0">
-                                        <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                                        <a href="#" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card card-category">
-                                    <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                                    <div class="card-body px-0">
-                                        <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                                        <a href="#" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card card-category">
-                                    <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                                    <div class="card-body px-0">
-                                        <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                                        <a href="#" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card card-category">
-                                    <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                                    <div class="card-body px-0">
-                                        <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                                        <a href="#" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card card-category">
-                                    <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                                    <div class="card-body px-0">
-                                        <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                                        <a href="#" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card card-category">
-                                    <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                                    <div class="card-body px-0">
-                                        <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                                        <a href="#" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card card-category">
-                                    <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                                    <div class="card-body px-0">
-                                        <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                                        <a href="#" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="card card-category" style="width: 15rem;">
-                <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                    <div class="col-md-10 text-center">
-                    <a href="#" class="btn btn-primary back-color btn-lg pr-3 pl-3 mb-2">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card card-category" style="width: 15rem;">
-                <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                    <div class="col-md-10 text-center">
-                    <a href="#" class="btn btn-primary back-color btn-lg pr-3 pl-3 mb-2">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card card-category" style="width: 15rem;">
-                <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                    <div class="col-md-10 text-center">
-                    <a href="#" class="btn btn-primary back-color btn-lg pr-3 pl-3 mb-2">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card card-category" style="width: 15rem;">
-                <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                    <div class="col-md-10 text-center">
-                    <a href="#" class="btn btn-primary back-color btn-lg pr-3 pl-3 mb-2">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card card-category" style="width: 15rem;">
-                <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                    <div class="col-md-10 text-center">
-                    <a href="#" class="btn btn-primary back-color btn-lg pr-3 pl-3 mb-2">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card card-category" style="width: 15rem;">
-                <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                    <div class="col-md-10 text-center">
-                    <a href="#" class="btn btn-primary back-color btn-lg pr-3 pl-3 mb-2">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card card-category" style="width: 15rem;">
-                <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                    <div class="col-md-10 text-center">
-                    <a href="#" class="btn btn-primary back-color btn-lg pr-3 pl-3 mb-2">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card card-category" style="width: 15rem;">
-                <img class="card-img-top" src="{{ asset('assets/product/product-3.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                    <div class="col-md-10 text-center">
-                    <a href="#" class="btn btn-primary back-color btn-lg pr-3 pl-3 mb-2">Go somewhere</a>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     <section id="mostFamous">

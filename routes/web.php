@@ -32,7 +32,7 @@ Route::get('product', 'ProductController@index')->name('showAllProducts');
 // this is the end of product controller
 
 // This portion is for category controller
-Route::get('/category/{category_name}', 'CategoryController@show')->name('showCategory');
+Route::get('/category', 'CategoryController@index')->name('showCategory');
 // This is the end of category controller
 
 // This portion is for single product
