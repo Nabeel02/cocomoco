@@ -121,4 +121,12 @@ class CategoryController extends Controller
     {
         //
     }
+
+    public function singleCategory($id){
+        $relatedProducts = App\Products::find($id)->relatedProducts;
+        
+        foreach ($relatedProducts as $product) {
+            echo $product;
+        }
+    }
 }

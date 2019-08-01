@@ -10,4 +10,9 @@ class Category extends Model
         $getCategories = Category::orderBy('id', 'desc')->take(8)->get();
         return $getCategories;
     }
+
+
+    public function relatedProducts(){
+        return $this->hasMany('App\Product');
+    }
 }
