@@ -17,6 +17,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 1,
         ]);
         DB::table('products')->insert([
             'name'=> 'Choclate Brownie',
@@ -24,6 +25,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 1,
         ]);
         DB::table('products')->insert([
             'name'=> 'Kitkat',
@@ -31,6 +33,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 1,
         ]);
         DB::table('products')->insert([
             'name'=> 'Twix',
@@ -38,6 +41,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 1,
         ]);
         DB::table('products')->insert([
             'name'=> 'Fudge Brownie Ice Cream',
@@ -45,6 +49,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 1,
         ]);
         DB::table('products')->insert([
             'name'=> 'Hershey Bar',
@@ -52,6 +57,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 2,
         ]);
         DB::table('products')->insert([
             'name'=> 'Choclate Fondue',
@@ -59,6 +65,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 2,
         ]);
         DB::table('products')->insert([
             'name'=> 'Oreo Cookies Cake',
@@ -66,6 +73,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 2,
         ]);
         DB::table('products')->insert([
             'name'=> 'Nestle Crunch',
@@ -73,6 +81,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 2,
         ]);
         DB::table('products')->insert([
             'name'=> 'Nutella',
@@ -80,6 +89,7 @@ class ProductsTableSeeder extends Seeder
             'price' => '34.00',
             'discountedPrice' => '64.05',
             'product_description' => 'Indulge ultra couverture dipping & enrobing choclate - milk.',
+            'category_id'=> 2,
         ]);
     }
 }

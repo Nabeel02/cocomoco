@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Product;
 class CategoryController extends Controller
 {
     /**
@@ -123,10 +124,11 @@ class CategoryController extends Controller
     }
 
     public function singleCategory($id){
-        $relatedProducts = App\Products::find($id)->relatedProducts;
+        $categories = new Category();
+        $relatedProducts = $categories->find($id)->relatedProducts;
         
         foreach ($relatedProducts as $product) {
-            echo $product;
+            return $product;
         }
     }
 }
