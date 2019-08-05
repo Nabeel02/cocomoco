@@ -127,8 +127,11 @@ class CategoryController extends Controller
         $categories = new Category();
         $relatedProducts = $categories->find($id)->relatedProducts;
         
-        foreach ($relatedProducts as $product) {
-            return $product;
-        }
+        $data = [
+            'relatedProducts' => $relatedProducts
+                ];
+
+        // return $relatedProducts;
+        return view('pages.singlecategory')->with($data);
     }
 }

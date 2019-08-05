@@ -45,13 +45,13 @@
             <div class="row">
                 <div class="col-md-10 mx-auto">
                     <div class="row py-5">
-                        @forelse($categories as $cat)
+                        @forelse($relatedProducts as $cat)
                             <div class="col-md-3">
                                 <div class="card my-3 " style="width: 100%;">
-                                <img src="{{asset('images/product/'.$cat->category_image) }}" class="card-img-top" alt="...">
+                                <img src="{{asset('images/product/'.$cat->product_image) }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title font-weight-bold text-danger">{{ $cat->name }}</h5>
-                                    <p class="card-text text-danger">{{ $cat->category_description }}</p>
+                                    <p class="card-text text-danger">{{ $cat->product_description }}</p>
                                     <a href="{{ url('product/'.str_replace (' ','_',$cat->id)) }}" style="background-color:#943D2B;" class="btn text-white">Go somewhere</a>
                                 </div>
                                 </div>
