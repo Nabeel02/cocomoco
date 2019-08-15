@@ -5,9 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
+use Gloudemans\Shoppingcart\Contracts\Buyable;
 use App\Product;
-use App\Cart;
+// 
+use Cart;
+// use Gloudemans\Shoppingcart\Cart;
 use Intervention\Image\ImageManagerStatic as Image;
+use App\ShoppingCart;
 
 class ProductController extends Controller
 {
@@ -98,14 +102,28 @@ class ProductController extends Controller
             ]);
             // return $request->all();
             if($validatedData){
-                $cart = new Cart();
+                // return $request->ProductPrice;
+                // return $request->all();
+                // dd($request);
+                // $reuiredData = [];
+                // return Cart::instance(Auth::user()->email)->content();
+                Cart::instance(Auth::user()->email)->add($request->userId, $request->productName, $request->quantity, $request->ProductPrice);
+                // foreach(Cart::instance(Auth::user()->email)->content() as $cart){
+                //     echo $cart->name.'</br>';
+                // }
+                // dd(Cart::instance(Auth::user()->email)->content());
+                $cart = new ShoppingCart();
                 $cart->userid = $request->userId;
+                $cart->Instance = Auth::user()->email;
                 $cart->productname = $request->productName;
+                // $cart->option = "['size'=>3]";
+                // $cart->rowId = 
                 $cart->quantity = $request->quantity;
                 $cart->price = $request->ProductPrice;
 
                 $cart->save();
-                return 'Product added to the cart';
+
+                return redirect()->route('showCart')->with('success','The item haas been added');
             }
         }
         $product = new Product();

@@ -12,7 +12,7 @@
     <header id="header-back">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-dark">
-                        <a class="navbar-brand navbar-brand-custom" href="#"><img src="{{ asset('assets/logo.png') }}" class="img-fluid" alt="logo"></a>
+                    <a class="navbar-brand navbar-brand-custom" href="{{ route('home') }}"><img src="{{ asset('assets/logo.png') }}" class="img-fluid" alt="logo"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -100,7 +100,7 @@
                                         <img class="card-img-top" src="{{ asset('images/category/'.$category->category_image) }} " alt="Card image cap">
                                         <div class="card-body px-0">
                                             <p class="card-text text-center">Indulge ultra couverture dipping & enrobing choclate - milk.</p>
-                                            <a href="#" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
+                                        <a href="{{ url('category/'.str_replace (' ','_',$category->id)) }}" class="btn btn-primary back-color btn-block py-2">Go somewhere</a>
                                         </div>
                                     </div>
                                 </div>

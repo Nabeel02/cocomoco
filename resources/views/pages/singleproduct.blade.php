@@ -5,7 +5,7 @@
 <header id="header-back" class="pb-4" style="background-attachment: fixed; height: 0% !important;">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-dark">
-            <a class="navbar-brand navbar-brand-custom" href="#"><img src="{{ asset('assets/logo.png') }}" class="img-fluid" alt="logo"></a>
+        <a class="navbar-brand navbar-brand-custom" href="{{ route('home') }}"><img src="{{ asset('assets/logo.png') }}" class="img-fluid" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

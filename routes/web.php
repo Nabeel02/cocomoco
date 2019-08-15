@@ -55,6 +55,17 @@ Route::get('categorystore', 'CategoryController@store')->name('categoryForm');
 
 // This is the end of admin
 
+// This is the start of cart
+Route::get('/cart', 'CartController@store')->name('showCart');
+
+Route::get('/destroy', function(){
+    Cart::instance(Auth::user()->email)->destroy();
+    return Cart::instance(Auth::user()->email)->content()->count();
+});
+
+// Route::post('/cart','CartController@store')->name('addCart');
+// This is the end of cart
+
 // This portion is for logout
 
 Route::get('/logout', function(){
